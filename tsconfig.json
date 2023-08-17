@@ -11,7 +11,7 @@
     "removeComments": false,
     "lib": ["ES2022"],
     "allowJs": true,
-    "typeRoots": ["node_modules/@types", "./"],
+    "typeRoots": ["node_modules/@types"],
     "baseUrl": "./",
     "paths": {
       "@/*": ["services/*"]

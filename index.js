@@ -1,1 +1,1 @@
-export * from './dist/cohere';
+export * from './dist/cohere.js';

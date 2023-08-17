@@ -5,5 +5,6 @@ await createBundle({
   output: 'dist/types/index.d.ts',
   modules: {
     'cohere': 'dist/cohere.js',
+    'models': 'dist/models/index.ts',
   }
 });

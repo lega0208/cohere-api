@@ -28,7 +28,7 @@ class APIImpl implements APIService {
   ): Promise<cohereResponse<responseBody>> {
     const reqData = JSON.stringify(data);
 
-    return (await fetch(`${URL.COHERE_API}/v${this.COHERE_VERSION}${endpoint}`, {
+    return (await fetch(`https://${URL.COHERE_API}/v${this.COHERE_VERSION}${endpoint}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json; charset=utf-8",

@@ -1,6 +1,6 @@
 {
-  "name": "@lega0208/cohere-api",
-  "version": "6.2.2",
+  "name": "cohere-api-web",
+  "version": "6.2.3",
   "description": "A Node.js SDK with TypeScript support for the Cohere API.",
   "homepage": "https://docs.cohere.ai",
   "main": "index.js",
@@ -8,7 +8,7 @@
   "types": "dist/cohere.d.ts",
   "typings": "dist/cohere.d.ts",
   "scripts": {
-    "build": "rollup -c && node scripts/generate-dts.js",
+    "build": "rollup -c",
     "dev": "webpack --progress --env development --env nodemon",
     "test": "mocha -r ts-node/register test/test.ts",
     "lint": "eslint . --ext .ts && prettier --check .",
@@ -57,5 +57,8 @@
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "cohere-api-web": "^6.2.3"
   }
 }
